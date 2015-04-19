@@ -3,7 +3,7 @@ Marketing
 
 Introduction
 ------------
-This is a simple marketing performance application. A list shows which campaigns generates how much registrations and 
+This is a simple marketing performance application. A list shows which campaign generates how much registrations and 
 revenue
 
 URL
