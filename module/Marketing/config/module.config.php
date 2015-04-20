@@ -17,10 +17,8 @@ return array(
             'marketing' => array(
                 'type'    => 'segment',
                 'options' => array(
-                    'route'    => '/[/:action]',
-                    'constraints' => array(
-                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                    ),
+                    'route'    => '/',
+
                     'defaults' => array(
                         'controller' => 'Marketing\Controller\Marketing',
                         'action'     => 'index',
