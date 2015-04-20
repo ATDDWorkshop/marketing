@@ -14,21 +14,19 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
 
-
 class MarketingController extends AbstractActionController
 {
 
     private $campaignTable;
 
 
-
-    protected function getCampaignTable(){
-        if(!$this->campaignTable){
-            $this->campaignTable=new CampaignTable();
+    protected function getCampaignTable()
+    {
+        if (!$this->campaignTable) {
+            $this->campaignTable = new CampaignTable();
         }
         return $this->campaignTable;
     }
-
 
 
     public function indexAction()
@@ -38,8 +36,6 @@ class MarketingController extends AbstractActionController
             'campaigns' => $this->getCampaignTable()->fetchAll(),
         ));
     }
-
-
 
 
 }

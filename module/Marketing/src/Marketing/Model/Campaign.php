@@ -9,7 +9,6 @@
 namespace Marketing\Model;
 
 
-
 class Campaign
 {
     public $name;
@@ -20,7 +19,7 @@ class Campaign
     public function exchangeArray($data)
     {
         $this->name = (!empty($data['campaign'])) ? $data['campaign'] : null;
-        $this->regs  = (!empty($data['regs'])) ? $data['regs'] : null;
+        $this->regs = (!empty($data['regs'])) ? $data['regs'] : null;
         $this->revenue = (!empty($data['revenue'])) ? $data['revenue'] : null;
     }
 

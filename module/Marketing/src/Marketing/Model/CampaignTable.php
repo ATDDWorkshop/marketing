@@ -11,11 +11,13 @@ namespace Marketing\Model;
 use Zend\Http\Request;
 use Zend\Http\Client;
 
-class CampaignTable {
+class CampaignTable
+{
 
     protected $campaigns;
 
-    public function fetchAll(){
+    public function fetchAll()
+    {
 
         if (!$this->campaigns) {
             $campaigns = array();
@@ -35,7 +37,7 @@ class CampaignTable {
                 $campaignObj->exchangeArray($campaign);
                 array_push($campaigns, $campaignObj);
             }
-            $this->campaigns=$campaigns;
+            $this->campaigns = $campaigns;
         }
         return $this->campaigns;
     }

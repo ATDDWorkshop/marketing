@@ -15,13 +15,13 @@ return array(
     'router' => array(
         'routes' => array(
             'marketing' => array(
-                'type'    => 'segment',
+                'type' => 'segment',
                 'options' => array(
-                    'route'    => '/',
+                    'route' => '/',
 
                     'defaults' => array(
                         'controller' => 'Marketing\Controller\Marketing',
-                        'action'     => 'index',
+                        'action' => 'index',
                     ),
                 ),
             ),

@@ -1,5 +1,3 @@
-
-
 <?php
 // module/Album/view/album/album/add.phtml:
 
@@ -17,14 +15,14 @@ $this->headTitle($title);
     </tr>
     <?php foreach ($campaigns as $campaign) : ?>
         <tr>
-            <td><?php echo $this->escapeHtml($campaign->name);?></td>
-            <td><?php echo $this->escapeHtml($campaign->regs);?></td>
-            <td><?php   if(is_null($campaign->revenue)){
-                            echo "0";
-                        }else {
-                            echo $this->escapeHtml($campaign->revenue);
-                        }
-                ;?>€</td>
+            <td><?php echo $this->escapeHtml($campaign->name); ?></td>
+            <td><?php echo $this->escapeHtml($campaign->regs); ?></td>
+            <td><?php if (is_null($campaign->revenue)) {
+                    echo "0";
+                } else {
+                    echo $this->escapeHtml($campaign->revenue);
+                }; ?>€
+            </td>
         </tr>
     <?php endforeach; ?>
 </table>
